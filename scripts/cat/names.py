@@ -9,11 +9,11 @@ from scripts.game_structure.game_essentials import game
 
 class Name():
     if os.path.exists('resources/dicts/names/names.json'):
-        with open('resources/dicts/names/names.json') as read_file:
+        with open('resources/dicts/names/names.json', encoding='utf8') as read_file:
             names_dict = ujson.loads(read_file.read())
 
-        if os.path.exists(get_save_dir() + '/prefixlist.txt'):
-            with open(get_save_dir() + '/prefixlist.txt', 'r') as read_file:
+        '''if os.path.exists(get_save_dir() + '/prefixlist.txt'):
+            with open(get_save_dir() + '/prefixlist.txt', 'r', encoding='utf8') as read_file:
                 name_list = read_file.read()
                 if_names = len(name_list)
             if if_names > 0:
@@ -27,7 +27,7 @@ class Name():
                             names_dict["normal_prefixes"].append(new_name)
 
         if os.path.exists(get_save_dir() + '/suffixlist.txt'):
-            with open(get_save_dir() + '/suffixlist.txt', 'r') as read_file:
+            with open(get_save_dir() + '/suffixlist.txt', 'r', encoding='utf8') as read_file:
                 name_list = read_file.read()
                 if_names = len(name_list)
             if if_names > 0:
@@ -41,7 +41,7 @@ class Name():
                             names_dict["normal_suffixes"].append(new_name)
 
         if os.path.exists(get_save_dir() + '/specialsuffixes.txt'):
-            with open(get_save_dir() + '/specialsuffixes.txt', 'r') as read_file:
+            with open(get_save_dir() + '/specialsuffixes.txt', 'r', encoding='utf8') as read_file:
                 name_list = read_file.read()
                 if_names = len(name_list)
             if if_names > 0:
@@ -52,24 +52,28 @@ class Name():
                             del names_dict["special_suffixes"][new_name[1:]]
                         elif ':' in new_name:
                             _tmp = new_name.split(':')
-                            names_dict["special_suffixes"][_tmp[0]] = _tmp[1]
+                            names_dict["special_suffixes"][_tmp[0]] = _tmp[1]'''
 
     def __init__(self,
                  status="warrior",
                  prefix=None,
                  suffix=None,
+                 gender=None,
                  colour=None,
                  eyes=None,
                  pelt=None,
                  tortiepattern=None,
                  biome=None,
                  specsuffix_hidden=False,
-                 load_existing_name=False
-                 ):
+                 load_existing_name=False,
+                 moons = None):
         self.status = status
+        self.gender = gender
         self.prefix = prefix
         self.suffix = suffix
         self.specsuffix_hidden = specsuffix_hidden
+        self.moons = moons
+        self.eyes = eyes
 
         name_fixpref = False
         # Set prefix
@@ -175,11 +179,24 @@ class Name():
 
     def __repr__(self):
         # Handles predefined suffixes (such as newborns being kit), then suffixes based on ages (fixes #2004, just trust me)
-        if self.status in self.names_dict["special_suffixes"] and not self.specsuffix_hidden:
-            return self.prefix + self.names_dict["special_suffixes"][self.status]
-        if game.config['fun']['april_fools']:
-            return self.prefix + 'egg'
-        return self.prefix + self.suffix
+        if self.status in ['newborn', 'kitten']:
+            if self.gender == 'female' and 'dimf' in self.names_dict['all_prefixes'][self.prefix]:
+                if ('dimaf' in self.names_dict['all_prefixes'][self.prefix]) and (self.eyes in ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE']):
+                    return self.names_dict['all_prefixes'][self.prefix]['dimaf']
+                else:
+                    return self.names_dict['all_prefixes'][self.prefix]['dimf']
+            else:
+                if ('dima' in self.names_dict['all_prefixes'][self.prefix]) and (self.eyes in ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE']):
+                    return self.names_dict['all_prefixes'][self.prefix]['dima']
+                else:
+                    return self.names_dict['all_prefixes'][self.prefix]['dim']
 
+        if self.status in self.names_dict["special_suffixes"] and not self.specsuffix_hidden:
+            return self.names_dict['all_prefixes'][self.prefix]['fem'] + ' ' + self.names_dict['special_suffixes'][self.status]
+
+        if self.status in ['loner'] and not self.specsuffix_hidden and self.moons is not None and self.moons < 12:
+            return self.names_dict['all_prefixes'][self.prefix]['fem'] + ' ' + 'Лапа'
+
+        return self.names_dict['all_prefixes'][self.prefix][(self.names_dict['all_suffixes'][self.suffix])] + ' ' + self.suffix
 
 names = Name()

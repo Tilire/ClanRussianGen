@@ -32,24 +32,24 @@ class MakeClanScreen(Screens):
     bg_preview_border = pygame.transform.scale(
         pygame.image.load("resources/images/bg_preview_border.png").convert_alpha(), (466, 416))
 
-    classic_mode_text = "This mode is Clan Generator at it's most basic. " \
-                        "The player will not be expected to manage the minutia of Clan life. <br><br>" \
-                        "Perfect for a relaxing game session or for focusing on storytelling. <br><br>" \
-                        "With this mode you are the eye in the sky, watching the Clan as their story unfolds. "
+    classic_mode_text = "Самый основной режим Генератора Племён. " \
+                        "От игрока не ожидается, что он будет управлять мелочами Племенной жизни. <br><br>" \
+                        "Идеально подходит для наслаждения игрой или сосредоточения на повествовании истории. <br><br>" \
+                        "С этим режимом вы наблюдаете с неба за развитием истории Племени. "
 
-    expanded_mode_text = "A more hands-on experience. " \
-                         "This mode has everything in Classic Mode as well as more management-focused features.<br><br>" \
-                         "Additional include:<br>" \
-                         "- Illnesses, Injuries, and Permanent Conditions<br>" \
-                         "- Herb gathering and treatment<br>" \
-                         "- Fresh-kill pile and nutrition system<br><br>" \
-                         "With this mode you'll be making the important Clan-life decisions."
+    expanded_mode_text = "Больше практического опыта. " \
+                         "В этом режиме есть всё, что имеется в классическом, а также есть больше функций управления.<br><br>" \
+                         "Новые функции включают:<br>" \
+                         "- Заболевания, травмы и неизлечимые состояния<br>" \
+                         "- Сбор трав и целительство<br>" \
+                         "- Возможность выбрать тип патруля<br><br>" \
+                         "С этим режимом вы принимаете важные решения для жизни Племени."
 
-    cruel_mode_text = "This mode has all the features of Expanded mode, but is significantly more difficult. If " \
-                      "you'd like a challenge with a bit of brutality, then this mode is for you.<br><br>" \
-                      "You heard the warnings... a Cruel Season is coming. Will you survive?" \
+    cruel_mode_text = "Этот режим имеет все возможности из Расширенного режима, но он значительно сложнее. " \
+                      "Если вам нравятся вызовы с некоторой жесткостью, данный режим для вас.<br><br>" \
+                      "Вы услышали предупреждения... грядёт Беспощадный Сезон. Сможете ли вы выжить?" \
                       "<br> <br>" \
-                      "-COMING SOON-"
+                      "-В РАЗРАБОТКЕ-"
 
     # This section holds all the information needed
     game_mode = 'classic'  # To save the users selection before conformation.
@@ -96,7 +96,7 @@ class MakeClanScreen(Screens):
 
         # Buttons that appear on every screen.
         self.menu_warning = pygame_gui.elements.UITextBox(
-            'Note: going back to main menu resets the generated cats.',
+            'Внимание: возвращение в главное меню сбросит сгенерированных котов',
             scale(pygame.Rect((50, 50), (1200, -1))),
             object_id=get_text_box_theme("#text_box_22_horizleft"), manager=MANAGER
         )
@@ -177,17 +177,17 @@ class MakeClanScreen(Screens):
 
     def handle_name_clan_event(self, event):
         if event.ui_element == self.elements["random"]:
-            self.elements["name_entry"].set_text(choice(names.names_dict["normal_prefixes"]))
+            self.elements["name_entry"].set_text(choice(names.names_dict["__normal_prefixes"]))
         elif event.ui_element == self.elements["reset_name"]:
             self.elements["name_entry"].set_text("")
         elif event.ui_element == self.elements['next_step']:
             new_name = sub(r'[^A-Za-z0-9 ]+', "", self.elements["name_entry"].get_text()).strip()
             if not new_name:
-                self.elements["error"].set_text("Your Clan's name cannot be empty")
+                self.elements["error"].set_text("Название вашего племени не может быть пустым")
                 self.elements["error"].show()
                 return
             if new_name.casefold() in [clan.casefold() for clan in game.switches['clan_list']]:
-                self.elements["error"].set_text("A Clan with that name already exists.")
+                self.elements["error"].set_text("Племя с таким названием уже существует.")
                 self.elements["error"].show()
                 return
             self.clan_name = new_name
@@ -207,11 +207,11 @@ class MakeClanScreen(Screens):
             if not self.elements['name_entry'].is_focused:
                 new_name = sub(r'[^A-Za-z0-9 ]+', "", self.elements["name_entry"].get_text()).strip()
                 if not new_name:
-                    self.elements["error"].set_text("Your Clan's name cannot be empty")
+                    self.elements["error"].set_text("Название вашего племени не может быть пустым")
                     self.elements["error"].show()
                     return
                 if new_name.casefold() in [clan.casefold() for clan in game.switches['clan_list']]:
-                    self.elements["error"].set_text("A Clan with that name already exists.")
+                    self.elements["error"].set_text("Племя с таким названием уже существует.")
                     self.elements["error"].show()
                     return
                 self.clan_name = new_name
@@ -219,11 +219,11 @@ class MakeClanScreen(Screens):
         elif event.key == pygame.K_RETURN:
             new_name = sub(r'[^A-Za-z0-9 ]+', "", self.elements["name_entry"].get_text()).strip()
             if not new_name:
-                self.elements["error"].set_text("Your Clan's name cannot be empty")
+                self.elements["error"].set_text("Название вашего племени не может быть пустым")
                 self.elements["error"].show()
                 return
             if new_name.casefold() in [clan.casefold() for clan in game.switches['clan_list']]:
-                self.elements["error"].set_text("A Clan with that name already exists.")
+                self.elements["error"].set_text("Племя с таким названием уже существует.")
                 self.elements["error"].show()
                 return
             self.clan_name = new_name
@@ -453,12 +453,12 @@ class MakeClanScreen(Screens):
             if self.elements["name_entry"].get_text() == "":
                 self.elements['next_step'].disable()
             elif self.elements["name_entry"].get_text().startswith(" "):
-                self.elements["error"].set_text("Clan names cannot start with a space.")
+                self.elements["error"].set_text("Название племени не может начинаться с пробела.")
                 self.elements["error"].show()
                 self.elements['next_step'].disable()
             elif self.elements["name_entry"].get_text().casefold() in [clan.casefold() for clan in
                                                                        game.switches['clan_list']]:
-                self.elements["error"].set_text("A Clan with that name already exists.")
+                self.elements["error"].set_text("Племя с таким названием уже существует.")
                 self.elements["error"].show()
                 self.elements['next_step'].disable()
             else:
@@ -482,16 +482,16 @@ class MakeClanScreen(Screens):
             # Set the mode explanation text
             if self.game_mode == 'classic':
                 display_text = self.classic_mode_text
-                display_name = "Classic Mode"
+                display_name = "Обычный Режим"
             elif self.game_mode == 'expanded':
                 display_text = self.expanded_mode_text
-                display_name = "Expanded Mode"
+                display_name = "Расширенный Режим"
             elif self.game_mode == 'cruel season':
                 display_text = self.cruel_mode_text
-                display_name = "Cruel Season"
+                display_name = "Беспощадный Сезон"
             else:
                 display_text = ""
-                display_name = "ERROR"
+                display_name = "ОШИБКА"
             self.elements['mode_details'].set_text(display_text)
             self.elements['mode_name'].set_text(display_name)
 
@@ -710,13 +710,13 @@ class MakeClanScreen(Screens):
 
     def refresh_selected_cat_info(self, selected=None):
         # SELECTED CAT INFO
-        if selected is not None:
+        if selected is not None: #names.names_dict["__normal_prefixes"]
 
             if self.sub_screen == 'choose leader':
                 self.elements['cat_name'].set_text(str(selected.name) +
                                                    ' --> ' +
-                                                   selected.name.prefix +
-                                                   'star')
+                                                   names.names_dict["all_prefixes"][selected.name.prefix]["fem"] +
+                                                   " " + 'Звезда')
             else:
                 self.elements['cat_name'].set_text(str(selected.name))
             self.elements['cat_name'].show()
@@ -797,7 +797,7 @@ class MakeClanScreen(Screens):
                                                                             pygame.transform.scale(text_box, (798, 922))
                                                                             , manager=MANAGER)
         self.elements['permi_warning'] = pygame_gui.elements.UITextBox(
-            "Your Clan's game mode is permanent and cannot be changed after Clan creation.",
+            "Режим игры выбирается один раз и не может быть изменён.",
             scale(pygame.Rect((200, 1162), (1200, 80))),
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
             manager=MANAGER
@@ -938,7 +938,7 @@ class MakeClanScreen(Screens):
                                                     visible=False, manager=MANAGER)
         # Error message, to appear if you can't choose that cat.
         self.elements['error_message'] = pygame_gui.elements.UITextBox(
-            "Too young to become leader",
+            "Лидер должен быть взрослым",
             scale(pygame.Rect((300, 706), (1000, 110))),
             object_id=get_text_box_theme("#text_box_30_horizcenter_red"),
             visible=False,
@@ -982,7 +982,7 @@ class MakeClanScreen(Screens):
                                                     visible=False, manager=MANAGER)
         # Error message, to appear if you can't choose that cat.
         self.elements['error_message'] = pygame_gui.elements.UITextBox(
-            "Too young to become deputy",
+            "Глашатай должен быть взрослым",
             scale(pygame.Rect((300, 706), (1000, 110))),
             object_id=get_text_box_theme("#text_box_30_horizcenter_red"),
             visible=False,
@@ -1029,7 +1029,7 @@ class MakeClanScreen(Screens):
                                                     manager=MANAGER)
         # Error message, to appear if you can't choose that cat.
         self.elements['error_message'] = pygame_gui.elements.UITextBox(
-            "Too young to become a medicine cat",
+            "Целитель должен быть взрослым",
             scale(pygame.Rect((300, 706), (1000, 110))),
             object_id=get_text_box_theme("#text_box_30_horizcenter_red"),
             visible=False,
@@ -1126,25 +1126,25 @@ class MakeClanScreen(Screens):
         self.tabs["newleaf_tab"] = UIImageButton(scale(pygame.Rect((1250, y_pos), (78, 68))), "",
                                                  object_id="#newleaf_toggle_button",
                                                  manager=MANAGER,
-                                                 tool_tip_text='Switch starting season to Newleaf.'
+                                                 tool_tip_text='Изменить начальный сезон на сезон Юных Листьев.'
                                                  )
         y_pos += 100
         self.tabs["greenleaf_tab"] = UIImageButton(scale(pygame.Rect((1250, y_pos), (78, 68))), "",
                                                    object_id="#greenleaf_toggle_button",
                                                    manager=MANAGER,
-                                                   tool_tip_text='Switch starting season to Greenleaf.'
+                                                   tool_tip_text='Изменить начальный сезон на сезон Зелёных Листьев.'
                                                    )
         y_pos += 100
         self.tabs["leaffall_tab"] = UIImageButton(scale(pygame.Rect((1250, y_pos), (78, 68))), "",
                                                   object_id="#leaffall_toggle_button",
                                                   manager=MANAGER,
-                                                  tool_tip_text='Switch starting season to Leaf-fall.'
+                                                  tool_tip_text='Изменить начальный сезон на сезон Листопада.'
                                                   )
         y_pos += 100
         self.tabs["leafbare_tab"] = UIImageButton(scale(pygame.Rect((1250, y_pos), (78, 68))), "",
                                                   object_id="#leafbare_toggle_button",
                                                   manager=MANAGER,
-                                                  tool_tip_text='Switch starting season to Leaf-bare.'
+                                                  tool_tip_text='Изменить начальный сезон на сезон Голых Деревьев.'
                                                   )
         # Random background
         self.elements["random_background"] = UIImageButton(scale(pygame.Rect((510, 1190), (580, 60))), "",
@@ -1170,7 +1170,7 @@ class MakeClanScreen(Screens):
                                                                         (200, 200)), manager=MANAGER)
         self.elements["continue"] = UIImageButton(scale(pygame.Rect((692, 500), (204, 60))), "",
                                                   object_id="#continue_button_small")
-        self.elements["save_confirm"] = pygame_gui.elements.UITextBox('Your Clan has been created and saved!',
+        self.elements["save_confirm"] = pygame_gui.elements.UITextBox('Ваше племя было создано и сохранено!',
                                                                       scale(pygame.Rect((200, 140), (1200, 60))),
                                                                       object_id=get_text_box_theme(
                                                                           "#text_box_30_horizcenter"),

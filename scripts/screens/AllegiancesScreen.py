@@ -22,7 +22,7 @@ class AllegiancesScreen(Screens):
 
     def screen_switches(self):
         # Heading
-        self.heading = pygame_gui.elements.UITextBox(f'{game.clan.name}Clan Allegiances',
+        self.heading = pygame_gui.elements.UITextBox(f'Состав Племени',
                                                      scale(pygame.Rect((390, 230), (800, 80))),
                                                      object_id=get_text_box_theme("#text_box_34_horizcenter")
                                                      , manager=MANAGER)
@@ -76,9 +76,9 @@ class AllegiancesScreen(Screens):
 
             if len(cat.apprentice) > 0:
                 if len(cat.apprentice) == 1:
-                    output += "\n      APPRENTICE: "
+                    output += "\n      ОРУЖЕНОСЕЦ: "
                 else:
-                    output += "\n      APPRENTICES: "     
+                    output += "\n      ОРУЖЕНОСЦЫ: "     
                 output += ", ".join([str(Cat.fetch_cat(i).name).upper() for i in cat.apprentice if Cat.fetch_cat(i)])
 
             return output
@@ -125,14 +125,14 @@ class AllegiancesScreen(Screens):
         outputs = []
         if game.clan.leader and not (game.clan.leader.dead or game.clan.leader.outside):
                 outputs.append([
-                    '<b><u>LEADER</u></b>',
+                    '<b><u>ЛИДЕР</u></b>',
                     self.generate_one_entry(game.clan.leader)
                 ])
 
         # Deputy Box:
         if game.clan.deputy and not (game.clan.deputy.dead or game.clan.deputy.outside):
             outputs.append([
-                '<b><u>DEPUTY</u></b>',
+                '<b><u>ГЛАШАТАЙ</u></b>',
                 self.generate_one_entry(game.clan.deputy)
             ])
         
@@ -140,9 +140,9 @@ class AllegiancesScreen(Screens):
         if living_meds:
             _box = ["", ""]
             if len(living_meds) == 1:
-                _box[0] = '<b><u>MEDICINE CAT</u></b>'
+                _box[0] = '<b><u>ЦЕЛИТЕЛЬ</u></b>'
             else:
-                _box[0] = '<b><u>MEDICINE CATS</u></b>'
+                _box[0] = '<b><u>ЦЕЛИТЕЛИ</u></b>'
             
             _box[1] = "\n".join([self.generate_one_entry(i) for i in living_meds])
             outputs.append(_box)
@@ -151,9 +151,9 @@ class AllegiancesScreen(Screens):
         if living_mediators:
             _box = ["", ""]
             if len(living_mediators) == 1:
-                _box[0] = '<b><u>MEDIATOR</u></b>'
+                _box[0] = '<b><u>МИРОТВОРЕЦ</u></b>'
             else:
-                _box[0] = '<b><u>MEDIATORS</u></b>'
+                _box[0] = '<b><u>МИРОТВОРЦЫ</u></b>'
             
             _box[1] = "\n".join([self.generate_one_entry(i) for i in living_mediators])
             outputs.append(_box)
@@ -162,9 +162,9 @@ class AllegiancesScreen(Screens):
         if living_warriors:
             _box = ["", ""]
             if len(living_warriors) == 1:
-                _box[0] = '<b><u>WARRIOR</u></b>'
+                _box[0] = '<b><u>ВОИТЕЛЬ</u></b>'
             else:
-                _box[0] = '<b><u>WARRIORS</u></b>'
+                _box[0] = '<b><u>ВОИТЕЛИ</u></b>'
             
             _box[1] = "\n".join([self.generate_one_entry(i) for i in living_warriors])
             outputs.append(_box)
@@ -173,9 +173,9 @@ class AllegiancesScreen(Screens):
         if living_apprentices:
             _box = ["", ""]
             if len(living_apprentices) == 1:
-                _box[0] = '<b><u>APPRENTICE</u></b>'
+                _box[0] = '<b><u>ОРУЖЕНОСЕЦ</u></b>'
             else:
-                _box[0] = '<b><u>APPRENTICES</u></b>'
+                _box[0] = '<b><u>ОРУЖЕНОСЦЫ</u></b>'
             
             _box[1] = "\n".join([self.generate_one_entry(i) for i in living_apprentices])
             outputs.append(_box)
@@ -183,7 +183,7 @@ class AllegiancesScreen(Screens):
          # Queens and Kits Box:
         if queen_dict or living_kits:
             _box = ["", ""]
-            _box[0] = '<b><u>QUEENS AND KITS</u></b>'
+            _box[0] = '<b><u>КОРОЛЕВЫ И КОТЯТА</u></b>'
             
             # This one is a bit different.  First all the queens, and the kits they are caring for. 
             all_entries = []

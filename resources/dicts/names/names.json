@@ -1,24 +1,35 @@
 {
   "special_suffixes": {
-    "newborn": "kit",
-    "kitten": "kit",
-    "apprentice": "paw",
-    "medicine cat apprentice": "paw",
-    "mediator apprentice": "paw",
-    "leader": "star"
+    "apprentice": "Лапа",
+    "medicine cat apprentice": "Лапа",
+    "mediator apprentice": "Лапа",
+    "leader": "Звезда"
     },
-  "normal_suffixes" : [
-    "fur", "fur", "fur", "fur", "fur", "fur", "fur", "fur", "fur", "fur", "fur",
-    "tuft", "tuft", "tuft", "tuft", "tuft", "tooth", "tooth", "tooth", "tooth", "tooth",
-    "pelt", "pelt", "pelt", "pelt", "pelt", "pelt", "pelt", "pelt", "pelt", "pelt", "pelt", 
-    "tail", "tail", "tail", "tail", "tail", "tail", "tail", "claw", "claw", "claw", "claw", "claw", "claw",
-    "foot", "foot", "foot", "foot", "foot", "whisker", "whisker", "whisker", "whisker", "whisker", "whisker",
-    "heart", "heart", "heart", "heart", "heart", "heart", "heart", "heart",
-    "arch", "ash", "aster", "back", "badger", "bark", "bat", "beak", "beam", "bee", "beetle", "bellow", "belly", "berry", 
-    "billow", "bird", "bite", "blaze", "blink", "bloom", "blossom", "blotch", "blur", "bone", "bounce", "bracken", "bramble", 
-    "branch", "break", "breeze", "briar", "bright", "brook", "bubble", "bud", "bumble", "burn", "burr", "burst", "bush", "buzz", 
-    "call", "catcher", "chase", "chaser", "chasm", "chest", "chill", "chirp", "chomp", "cinder", "clash", "cloud", "clover",
-    "crackle", "crash", "crawl", "creek", "crest", "cry", "curl", "current", "daisy", "dance", "dapple", "dart", "dash", "dawn", 
+  "all_suffixes": {
+        "Бег": "masc", "Крапинка": "fem", "Облако": "neuter", "Тень": "fem", "Шерсть": "fem", "Ягода": "fem", "Клык": "masc",
+    "Туман": "masc", "Нога": "fem",
+    "Хвост": "masc", "Коготь": "masc", "Птица": "fem", "Поток": "masc", "Полоса": "fem", "Пепел": "masc",
+    "Пруд": "masc", "Сердце": "neuter", "Шкура": "fem", "Шепот": "masc", "Ус": "masc", "Взор": "masc", "Зуб": "masc", "Пятно": "neuter", "Рябь": "fem"
+  },
+  "normal_suffixes": [
+    "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть",
+    "Хвост", "Хвост", "Хвост", "Хвост", "Хвост", "Хвост", "Хвост", "Коготь", "Коготь", "Коготь", "Коготь", "Коготь", "Коготь",
+    "Сердце", "Сердце", "Сердце", "Сердце", "Сердце", "Сердце", "Сердце", "Сердце",
+    "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура",
+    "Нога", "Нога", "Нога", "Нога", "Нога", "Ус", "Ус", "Ус", "Ус", "Ус", "Ус", "Зуб", "Зуб", "Зуб", "Зуб", "Зуб"
+    ],
+  "__normal_suffixes" : [
+    "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть", "Шерсть",
+    "Зуб", "Зуб", "Зуб", "Зуб", "Зуб",
+    "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", "Шкура", 
+    "Хвост", "Хвост", "Хвост", "Хвост", "Хвост", "Хвост", "Хвост", "Коготь", "Коготь", "Коготь", "Коготь", "Коготь", "Коготь",
+    "Ус", "Ус", "Ус", "Ус", "Ус", "Ус",
+    "Сердце", "Сердце", "Сердце", "Сердце", "Сердце", "Сердце", "Сердце", "Сердце",
+    "Пепел", "Астра", "Спина", "Барсук", "Кора", "Клюв", "Луч", "Пчела", "Жук", "Рев", "Живот", "Ягода", 
+    "Птица", "Укус", "Блеск", "Цвет", "Цвет", "Кость", "Прыжок", "Папоротник", "Ежевика", 
+    "Ветка", "Ветер", "Шиповник", "Светлый", "Ручей", "Пузырь", "Шмель", "Куст",
+    "Зов", "Ловец", "Погоня", "Расщелина", "Грудь", "Прохлада", "Щебет", "Зола", "Облако", "Клевер",
+    "Хруст", "Заводь", "crest", "cry", "curl", "current", "daisy", "dance", "dapple", "dart", "dash", "dawn", 
     "daze", "dazzle", "dew", "dream", "drift", "drizzle", "drop", "dusk", "dust", "eagle", "ear", "ears", "echo", "egg", "ember", 
     "eye", "eyes", "face", "falcon", "fall", "fang", "feather", "fern", "fin", "fire", "fish", "flake", "flame", "flare", "flash", 
     "fleck", "flick", "flicker", "flight", "flip", "flit", "flood", "flow", "flower", "fluff", "fog", "fox", "freeze", "frost", "fruit", 
@@ -32,47 +43,116 @@
     "roach", "roar", "rock", "root", "rose", "rumble", "rump", "run", "runner", "rush", "rustle", "scar", "scratch", "screech", 
     "seed", "seeker", "shade", "shadow", "shard", "shell", "shimmer", "shine", "shiver", "shock", "shriek", "sight", "silk", "skip", 
     "skitter", "sky", "slash", "slip", "snap", "snarl", "snout", "snow", "soar", "song", "spark", "speck", "speckle", "spider", 
-    "spike", "spirit", "splash", "splinter", "spore", "spot", "spots", "spring", "sprout", "stalk", "stem", "step", "sting", "stone", 
+    "spike", "spirit", "splash", "splinter", "spore", "Пятно", "Пятна", "spring", "sprout", "stalk", "stem", "step", "sting", "stone", 
     "storm", "streak", "stream", "strike", "stripe", "sun", "swarm", "swipe", "swoop", "talon", "tangle",
-    "thistle", "thorn", "thrift", "throat", "thrush", "thud", "thunder", "tiger", "timber", "toe", "tooth", "trail", "tree", 
+    "thistle", "thorn", "thrift", "throat", "thrush", "thud", "thunder", "tiger", "timber", "toe", "Зуб", "trail", "tree", 
     "trot", "tumble", "twist", "valley", "watcher", "water", "wave", "web", "whisper", "whistle", "willow", "wind", "wing", "wish", "wisp", 
     "zoom"
   ],
   "pelt_suffixes": {
-    "TwoColour": ["patch", "spot", "splash", "patch", "spots", "swan"],
+    "TwoColour": ["Пятно", "Пятно"],
+    "Tabby": ["Тень"],
+    "Marbled": ["Тень"],
+    "Speckled": ["Крапинка"],
+    "Bengal": ["Крапинка"],
+    "Tortie": ["Рябь"],
+    "Rosette": ["Крапинка"],
+    "Calico": ["Пятно", "Пятно"],
+    "Smoke": ["Тень"],
+    "Ticked": ["Шкура"],
+    "Mackerel": ["Полоса"],
+    "Classic": ["Полоса"],
+    "Sokoke": ["Полоса"],
+    "Agouti": ["Шкура"],
+    "Singlestripe": ["Тень"],
+    "Masked": ["Тень"]
+  },
+  "__pelt_suffixes": {
+    "TwoColour": ["patch", "Пятно", "Брызги", "patch", "Пятна", "Лебедь"],
     "Tabby": ["stripe", "feather", "leaf", "stripe", "shade"],
     "Marbled": ["stripe", "feather", "leaf", "stripe", "shade"],
-    "Speckled": ["dapple", "speckle", "spot", "speck", "freckle", "fleck"],
-    "Bengal": ["dapple", "speckle", "spots", "speck", "freckle", "fleck"],
-    "Tortie": ["dapple", "speckle", "spot", "dapple"],
-    "Rosette": ["dapple", "speckle", "spots", "dapple", "freckle", "fleck"],
+    "Speckled": ["dapple", "speckle", "Пятно", "speck", "freckle", "fleck"],
+    "Bengal": ["dapple", "speckle", "Пятна", "speck", "freckle", "fleck"],
+    "Tortie": ["dapple", "speckle", "Пятно", "dapple"],
+    "Rosette": ["dapple", "speckle", "Пятна", "dapple", "freckle", "fleck"],
     "Calico": ["stripe", "dapple", "patch", "patch"],
     "Smoke": ["fade", "dusk", "dawn", "smoke"],
-    "Ticked": ["spots", "pelt", "speckle", "freckle"],
+    "Ticked": ["Пятна", "Шкура", "speckle", "freckle"],
     "Mackerel": ["stripe", "feather", "leaf", "stripe", "fern"],
     "Classic": ["stripe", "feather", "leaf", "stripe", "fern"],
     "Sokoke": ["stripe", "feather", "leaf", "stripe", "fern"],
-    "Agouti": ["back", "pelt", "fur"],
+    "Agouti": ["back", "Шкура", "Шерсть"],
     "Singlestripe": ["stripe", "streak", "back", "shade", "stem", "shadow"],
     "Masked": ["stripe", "mask", "mask", "shade"]
   },
   "tortie_pelt_suffixes": {
-    "solid": ["dapple", "speckle", "spots", "splash"],
+    "solid": ["Пятно"],
+    "tabby": ["Полоса"],
+    "bengal": ["Пятно"],
+    "marbled": ["Полоса"],
+    "ticked": ["Шкура"],
+    "smoke": ["Тень"],
+    "rosette": ["Крапинка"],
+    "speckled": ["Крапинка"],
+    "mackerel": ["Полоса"],
+    "classic": ["Крапинка"],
+    "sokoke": ["Полоса"],
+    "agouti": ["Шкура"],
+    "masked": ["Тень"]
+  },
+  "__tortie_pelt_suffixes": {
+    "solid": ["dapple", "speckle", "Пятна", "splash"],
     "tabby": ["stripe", "feather", "leaf", "stripe", "shade", "fern"],
-    "bengal": ["dapple", "speckle", "spots", "speck", "fern", "freckle"],
+    "bengal": ["dapple", "speckle", "Пятна", "speck", "fern", "freckle"],
     "marbled": ["stripe", "feather", "leaf", "stripe", "shade", "fern"],
-    "ticked": ["spots", "pelt", "speckle", "freckle"],
+    "ticked": ["Пятна", "Шкура", "speckle", "freckle"],
     "smoke": ["fade", "dusk", "dawn", "smoke"],
-    "rosette": ["dapple", "speckle", "spots", "dapple", "fern", "freckle"],
-    "speckled": ["dapple", "speckle", "spot", "speck", "freckle"],
+    "rosette": ["dapple", "speckle", "Пятна", "dapple", "fern", "freckle"],
+    "speckled": ["dapple", "speckle", "Пятно", "speck", "freckle"],
     "mackerel": ["stripe", "feather", "fern", "shade"],
     "classic": ["stripe", "feather", "fern"],
     "sokoke": ["stripe", "feather", "fern", "shade", "dapple"],
-    "agouti": ["back", "pelt", "fur", "dapple", "splash"],
+    "agouti": ["back", "Шкура", "Шерсть", "dapple", "splash"],
     "masked": ["stripe", "dapple", "mask", "mask", "shade"]
   },
 
+  "all_prefixes": {
+    "Астра": {"masc": "Астр", "fem": "Астра", "dim": "Астрик", "dimf": "Астрочка"},
+    "Белый": {"masc": "Белый", "fem": "Белая", "neuter": "Белое", "dim": "Беленький", "dimf": "Беленькая"},
+    "Тусклый": {"masc": "Тусклый", "fem": "Тусклая", "neuter": "Тусклое", "dim": "Тускленький", "dimf": "Тускленькая"},
+    "Синий": {"masc": "Синий", "fem": "Синяя", "neuter": "Синее", "dim": "Синенький", "dimf": "Синенькая"},
+    "Мутный": {"masc": "Мутный", "fem": "Мутная", "neuter": "Мутное", "dim": "Мутненький", "dimf": "Мутненькая"},
+    "Бурый": {"masc": "Бурый", "fem": "Бурая", "neuter": "Бурое", "dim": "Буренький", "dimf": "Бурка", "dimaf": "Буренькая"},
+    "Янтарный": {"masc": "Янтарный", "fem": "Янтарная", "neuter": "Янтарное", "dim": "Янтарненький", "dimf": "Янтраненькая", "dima": "Янтарчик"},
+    "Черный": {"masc": "Черный", "fem": "Черная", "neuter": "Черное", "dim": "Черненький", "dimf": "Черненькая"},
+    "Облачный": {"masc": "Облачный", "fem": "Облачная", "neuter": "Облачное", "dim": "Облачко"},
+    "Дубовый": {"masc": "Дубовый", "fem": "Дубовая", "neuter": "Дубовое", "dim": "Дубовенький", "dima": "Дубок"},
+    "Светлый": {"masc": "Светлый", "fem": "Светлая", "neuter": "Светлое", "dim": "Светленький", "dimf": "Светленькая", "dima": "Светик", "dimaf": "Светик"},
+    "Каменный": {"masc": "Каменный", "fem": "Каменная", "neuter": "Каменное", "dim": "Камушек"},
+    "Сиреневый": {"masc": "Сиреневый", "fem": "Сиреневая", "neuter": "Сиреневое", "dim": "Сиреневенький", "dimf": "Сиреневенькая", "dimaf": "Сирень"},
+    "Лиственный": {"masc": "Лиственный", "fem": "Лиственная", "neuter": "Лиственное", "dim": "Листик", "dimf": "Листвичка"},
+    "Ледяной": {"masc": "Ледяной", "fem": "Ледяная", "neuter": "Ледяное", "dim": "Лед", "dima": "Ледик", "dimf": "Ледышка"},
+    "Морозный": {"masc": "Морозный", "fem": "Морозная", "neuter": "Морозное", "dim": "Морозненький", "dima": "Мороз", "dimf": "Морозненькая"},
+    "Маковый": {"masc": "Маковый", "fem": "Маковая", "neuter": "Маковое", "dim": "Маковенький", "dimf": "Маковка", "dimaf": "Маковенькая"},
+    "Муравьиный": {"masc": "Муравьиный", "fem": "Муравьиная", "neuter": "Муравьиное", "dim": "Муравьишка"},
+    "Голубой": {"masc": "Голубой", "fem": "Голубая", "neuter": "Голубое", "dim": "Голубенький", "dimf": "Голубенькая", "dimaf": "Голубичка"},
+    "Небесный": {"masc": "Небесный", "fem": "Небесная", "neuter": "Небесное", "dim": "Небесненький", "dima": "Небо", "dimf": "Небесненькая"},
+    "Огненный": {"masc": "Огненный", "fem": "Огненная", "neuter": "Огненное", "dim": "Огонек"},
+    "Песочный": {"masc": "Песочный", "fem": "Песочная", "neuter": "Песочное", "dim": "Песочек", "dima": "Песочненький", "dimf": "Песочненькая"},
+    "Песчаный": {"masc": "Песчаный", "fem": "Песчаная", "neuter": "Песчаное", "dim": "Песочек", "dima": "Песчаненький"},
+    "Паучий": {"masc": "Паучий", "fem": "Паучья", "neuter": "Паучье", "dim": "Паучок"},
+    "Пчелиный": {"masc": "Пчелиный", "fem": "Пчелиная", "neuter": "Пчелиное", "dim": "Пчелка"},
+    "Снежный": {"masc": "Снежный", "fem": "Снежная", "neuter": "Снежное", "dim": "Снежненький", "dimf": "Снежинка", "dima": "Снежок"},
+    "Серый": {"masc": "Серый", "fem": "Серая", "neuter": "Серое", "dim": "Серенький", "dimf": "Серенькая"},
+    "Пыльный": {"masc": "Пыльный", "fem": "Пыльная", "neuter": "Пыльное", "dim": "Пыльненький", "dimf": "Пыльненькая", "dimaf": "Пыль"},
+    "Зеленый": {"masc": "Зеленый", "fem": "Зеленая", "neuter": "Зеленое", "dim": "Зелененький", "dimf": "Зелененькая"},
+    "Желудевый": {"masc": "Желудевый", "fem": "Желудевая", "neuter": "Желудевая", "dim": "Желудь"},
+    "Желтый": {"masc": "Желтый", "fem": "Желтая", "neuter": "Желтое", "dim": "Желтенький", "dimf": "Желтенькая"}
+  },
   "normal_prefixes": [
+    "Дубовый", "Светлый", "Муравьиный", "Небесный", "Паучий", "Пчелиный", "Снежный"
+  ],
+  "__normal_prefixes": [
     "Adder", "Alder", "Ant", "Antler", "Aphid", "Apple", "Apricot", "Arch", "Aspen", "Aster", 
     "Badger", "Barley", "Basil", "Bass", "Bay", "Beam", "Bear", "Beaver", "Bee", "Beech", "Beetle", "Berry", "Big", "Billow", "Birch", 
     "Bird", "Bite", "Bitter", "Bittern", "Bliss", "Blizzard", "Bloom", "Blossom", "Blotch", "Bluebell", "Bluff", "Bog", "Borage", 
@@ -114,8 +194,67 @@
 
   "colour_prefixes": {
     "WHITE": [
+    "Белый", "Белый", "Тусклый", "Облачный", "Снежный"
+    ],
+    "PALEGREY": [
+    "Тусклый", "Облачный", "Небесный", "Серый", "Серый"
+    ],
+    "SILVER": [
+    "Тусклый", "Синий", "Голубой"
+    ],
+    "GREY": [
+    "Серый", "Серый"
+    ],
+    "DARKGREY": [
+    "Серый", "Серый"
+    ],
+    "GHOST": [
+    "Черный", "Черный"
+    ],
+    "PALEGINGER": [
+    "Тусклый", "Песочный", "Песчаный", "Желтый"
+    ],
+    "GOLDEN": [
+    "Янтарный", "Песочный", "Песчаный", "Желтый"
+    ],
+    "GINGER": [
+    "Янтарный", "Огненный"
+    ],
+    "DARKGINGER": [
+    "Янтарный", "Огненный"
+    ],
+    "SIENNA": [
+    "Огненный"
+    ],
+    "CREAM": [
+    "Тусклый", "Песочный", "Песчаный", "Желтый"
+    ],
+    "LIGHTBROWN": [
+    "Тусклый", "Бурый", "Песочный", "Песчаный"
+    ],
+    "LILAC": [
+    "Тусклый", "Сиреневый"
+    ],
+    "BROWN": [
+    "Бурый", "Бурый"
+    ],
+    "GOLDEN-BROWN": [
+    "Бурый", "Бурый"
+    ],
+    "DARKBROWN": [
+    "Бурый", "Бурый"
+    ],
+    "CHOCOLATE": [
+    "Бурый", "Бурый"
+    ],
+    "BLACK": [
+    "Черный", "Черный", "Черный"
+    ]
+  },
+  "__colour_prefixes": {
+    "WHITE": [
     "White", "White", "Pale", "Snow", "Cloud", "Cloudy", "Milk", "Hail", "Frost", "Frozen", "Freeze", "Ice", "Icy", "Icicle",
-    "Blizzard", "Flurry", "Moon", "Light", "Bone", "Bright", "Swan", "Dove", "Cotton", "Hawthorn", "Laurel", "Wisp",
+    "Blizzard", "Flurry", "Moon", "Light", "Bone", "Bright", "Лебедь", "Dove", "Cotton", "Hawthorn", "Laurel", "Wisp",
     "Fringe", "Ibis", "Air", "Bright", "Rime", "Ghost", "Privet", "Egg"
     ],
     "PALEGREY": [
@@ -205,6 +344,26 @@
 
   "biome_prefixes": {
     "Forest": [
+    "Желудевый"
+    ],
+    "Beach": [
+    "Песочный", "Песчаный"
+    ],
+    "Plains": [
+    "Маковый", "Маковый"
+    ],
+    "Mountainous": [
+    "Каменный"
+    ],
+    "Wetlands": [
+    "Мутный"
+    ],
+    "Desert": [
+    "Пыльный"
+    ]
+  },
+  "__biome_prefixes": {
+    "Forest": [
     "Acorn","Almond", "Antler", "Aspen", "Badger", "Bark", "Bat", "Beech", "Birch", "Boar", "Branch", "Branch", "Buck", "Canopy",
     "Cedar", "Civet", "Deer", "Doe", "Elk", "Fern", "Fern", "Fir", "Forest", "Frond", "Grouse", "Grove", "Honey", "Log", "Lynx", "Magnolia",
     "Maple", "Moose", "Moss", "Moss", "Mushroom", "Oak", "Oak", "Pine", "Robin", "Robin", "Sap", "Skunk", "Sparrow", "Sprig",
@@ -250,6 +409,26 @@
 
   "biome_suffixes": {
     "Forest": [
+    "Туман"
+    ],
+    "Beach": [
+    "Пруд"
+    ],
+    "Plains": [
+    "Бег"
+    ],
+    "Mountainous": [
+    "Шепот"
+    ],
+    "Wetlands": [
+    "Поток"
+    ],
+    "Desert": [
+    "Пепел"
+    ]
+  },
+  "__biome_suffixes": {
+    "Forest": [
     "acorn", "antler", "beak", "branch", "clove", "cone", "dapple", "deer", "fawn", "fern", "fog", "frond", "grove", "moss", 
     "sap", "shade", "twig", "wood", "thicket", "glade", "bear"
     ],
@@ -272,12 +451,33 @@
     "wave", "creek", "ripple", "turtle", "mire"
     ],
     "Desert": [
-    "prickle", "dune", "sand", "canyon", "rattle", "wind", "dust", "sun", "fly", "scorpion", "snake", "needle", "fang", "tooth", "bite",
+    "prickle", "dune", "sand", "canyon", "rattle", "wind", "dust", "sun", "fly", "scorpion", "snake", "needle", "fang", "Зуб", "bite",
     "aloe"
     ]
   },
 
   "eye_prefixes": {
+    "YELLOW": ["Желтый"],
+    "AMBER": ["Янтарный"],
+    "HAZEL": ["Песочный", "Песчаный"],
+    "PALEGREEN": ["Тусклый"],
+    "GREEN": ["Зеленый"],
+    "BLUE": ["Синий", "Голубой"],
+    "DARKBLUE": ["Синий", "Голубой"],
+    "GREY": ["Каменный", "Серый"],
+    "CYAN": ["Голубой"],
+    "EMERALD": ["Зеленый"],
+    "PALEBLUE": ["Тусклый", "Синий", "Голубой"],
+    "PALEYELLOW": ["Тусклый", "Желтый"],
+    "GOLD": ["Янтарный", "Желтый"],
+    "HEATHERBLUE": ["Синий", "Сиреневый", "Голубой"],
+    "COPPER": ["Янтарный"],
+    "SAGE": ["Зеленый"],
+    "COBALT": ["Голубой"],
+    "SUNLITICE": ["Ледяной", "Морозный"],
+    "GREENYELLOW": ["Зеленый", "Желтый"]
+  },
+  "__eye_prefixes": {
     "YELLOW": ["Yellow", "Moon", "Daisy", "Honey", "Light", "Sun", "Lemon"],
     "AMBER": ["Amber", "Sun", "Fire", "Gold", "Honey", "Scorch", "Flame", "Blaze", "Pumpkin"],
     "HAZEL": ["Hazel", "Tawny", "Hazel", "Gold", "Daisy", "Sand", "Almond"],
@@ -390,7 +590,7 @@
     "Siri", "Sirius", "Six Grains of Gravel", "Skimbleshanks", "Skittles", "Skitty", "Skrunkly", "Skylar", "Skyrim", "Slinky", "Sloane", "Sloth", "Slug", 
     "Slurpuff", "Slushie", "Smarty Pants", "Smile", "Smiley", "Smoke", "Smoky", "Smoothie", "Smores", "Snaggles", "Sneakers", "Snek", "Snickers", "Snom", "Snook", "Snoots", "Snotlout", "Snowball", "Snowbell", "Snuttig", "Soap", "Soap Bubbles", "Soccer Ball", "Socks", "Soda Pop", "Sofa", "Sofanthiel", "Sofrito", 
     "Sol", "Solanum", "Soleil", "Sona", "Sonata", "Sonic", "Sonnet", "Sookie", "Soos", "Sooty", "Sophie", "Sorbet", "Sotast", "Soup", "Sox", "Spam", "Sparkle", "Sparky", "Spatula", 
-    "Speedwell", "Spicy", "Spinach", "Spinel", "Spock", "Spooky", "Spoon", "Spore", "Spots", "Sprigatito", "Squeak", "Stan", "Stanley", "Star", "Stargazer", "Starfish", "Starry", "Static", "Steak", "Stella", "Steve", "Steven", "Stink Mink", "Stinkbutt", "Stinky", "Stitches", 
+    "Speedwell", "Spicy", "Spinach", "Spinel", "Spock", "Spooky", "Spoon", "Spore", "Пятна", "Sprigatito", "Squeak", "Stan", "Stanley", "Star", "Stargazer", "Starfish", "Starry", "Static", "Steak", "Stella", "Steve", "Steven", "Stink Mink", "Stinkbutt", "Stinky", "Stitches", 
     "Stolas", "Strawberry", "Stripes", "Stuffie", "Styx", "Subaru", "Sucrose", "Sueno", "Sugar", "Suhailah", "Summit", "Sundae", "Sunflower", "Sungrazer",
     "Sunny", "Sunny Meadow", "Sunset", "Survivor", "Sushi", "Suya", "Sweet Creature", "Sweet Leon", "Sweet Marmalade", "Sweet", "Sweetie", "Sybil", "Sylvana", "Sylveon", "Sylvester", "Synth", "Tabasco", "Tabatha", 
     "Tabby", "Tabbytha", "Taco Bell", "Taco", "Taffy", "Tahini", "Tahir", "Taihu", "Taillow", "Talia", "Tamagotchi", "Tamale", "Tammy", "Tangerine", 
@@ -413,7 +613,7 @@
 	"animal_suffixes": [
 		"badger", "bat", "bear", "bee", "beetle", "bird", "bug", "cricket", "deer", "eagle", "elk", "falcon", "fawn", "fish", "fox", "goose", "hare", "hawk", "horse", 
     "jay", "kestrel", "kite", "lamb", "leopard", "lion", "minnow", "moth", "mouse", "newt", "ram", "raven", "roach", "scorpion", "sheep", "snake", "spider", 
-    "squid", "swan", "thrush", "tiger", "turtle"
+    "squid", "Лебедь", "thrush", "tiger", "turtle"
 	],
 	"animal_prefixes": [
 		"Addax", "Adder", "Albatross", "Alligator", "Alpaca", "Ant", "Antelope", "Aphid", "Avocet", "Axolotl", "Badger", "Barracuda", "Bass", "Bat", "Bear", "Beaver", 
@@ -426,11 +626,11 @@
     "Mink", "Minnow", "Mite", "Mole", "Moorhen", "Moose", "Mosquito", "Moth", "Mouse", "Newt", "Nightingale", "Octopus", "Oriole", "Oryx", "Osprey", "Otter", "Owl", 
     "Panther", "Partridge", "Pelican", "Perch", "Pheasant", "Pigeon", "Pike", "Pipit", "Pronghorn", "Python", "Quail", "Rabbit", "Raccoon", "Ram", "Rat", "Raven", 
     "Roach", "Robin", "Sable", "Salamander", "Salmon", "Sardine", "Scorpion", "Seabass", "Seagull", "Serpent", "Shark", "Sheep", "Shrew", "Shrike", "Skink", "Skunk", 
-    "Slug", "Snail", "Snake", "Sparrow", "Spider", "Spoonbill", "Squid", "Squirrel", "Stag", "Starling", "Stoat", "Stork", "Swallow", "Swan", "Tadpole", "Taipan", 
+    "Slug", "Snail", "Snake", "Sparrow", "Spider", "Spoonbill", "Squid", "Squirrel", "Stag", "Starling", "Stoat", "Stork", "Swallow", "Лебедь", "Tadpole", "Taipan", 
     "Tarantula", "Tiger", "Toad", "Trout", "Turtle", "Viper", "Vixen", "Vole", "Vulture", "Warbler", "Wasp", "Weasel", "Weevil", "Whale", "Wolf", "Wolverine", "Worm", 
     "Wren"
 	],
 	"inappropriate_names": [
-		"wetback", "yellowface", "redface", "blackface", "brownface", "pancakeface", "yellowbone", "molesting"
+		"wetback", "yellowface", "redface", "blackface", "brownface", "pancakeface", "yellowbone"
 	]
 }
