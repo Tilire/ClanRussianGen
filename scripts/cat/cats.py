@@ -177,7 +177,7 @@ class Cat():
         self.backstory = backstory
         self.age = None
         self.skills = CatSkills(skill_dict=skill_dict)
-        self.personality = Personality(trait="troublesome", lawful=0, aggress=0,
+        self.personality = Personality(trait="troublesome", ru_name="хлопотливый", lawful=0, aggress=0,
                                        stable=0, social=0)
         self.parent1 = parent1
         self.parent2 = parent2
@@ -2952,7 +2952,7 @@ class Personality():
     with open("resources/dicts/traits/trait_ranges.json", "r", encoding='utf8') as read_file:
         trait_ranges = ujson.loads(read_file.read())
     
-    def __init__(self, trait:str=None, kit_trait:bool=False, lawful:int=None, social:int=None, aggress:int=None, 
+    def __init__(self, trait:str=None, kit_trait:bool=False, ru_name:str=None, lawful:int=None, social:int=None, aggress:int=None, 
                  stable:int=None) -> Personality:
         """If trait is given, it will randomize facets within the range of the trait. It will ignore any facets given. 
             If facets are given and no trait, it will find a trait that matches the facets. NOTE: you can give
@@ -2964,17 +2964,19 @@ class Personality():
         self._aggress = 0
         self._stable = 0
         self.trait = None
+        self.ru_name = None
         self.kit = kit_trait #If true, use kit trait. If False, use normal traits. 
         
         if self.kit:
             trait_type_dict = Personality.trait_ranges["kit_traits"]
         else:
             trait_type_dict = Personality.trait_ranges["normal_traits"]
-        
+
         _tr = None
         if trait and trait in trait_type_dict:
             # Trait-given init
             self.trait = trait
+            self.ru_name = trait_type_dict[trait]['ru_name']
             _tr = trait_type_dict[self.trait]
         
         # Set Facet Values
@@ -3152,9 +3154,11 @@ class Personality():
             
         if possible_traits:
             self.trait = choice(possible_traits)
+            self.ru_name = trait_type_dict[trait]['ru_name']
         else:
             print("Нет возможных черт характера! Используем 'странный'")
             self.trait = "strange"
+            self.ru_name = "странный"
             
     def facet_wobble(self, max=5):
         """Makes a small adjustment to all the facets, and redetermines trait if needed."""        

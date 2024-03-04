@@ -298,7 +298,7 @@ class RelationshipScreen(Screens):
                                                                               "#text_box_34_horizleft"))
         self.focus_cat_elements["details"] = pygame_gui.elements.UITextBox(self.the_cat.genderalign + " - " + \
                                                                            str(self.the_cat.moons) + " moons - " + \
-                                                                           self.the_cat.personality.trait,
+                                                                           self.the_cat.personality['ru_name'],
                                                                            scale(pygame.Rect((160, 210), (800, 60))),
                                                                            object_id=get_text_box_theme(
                                                                                "#text_box_22_horizleft"))
@@ -384,7 +384,7 @@ class RelationshipScreen(Screens):
             col1 += f"{self.inspect_cat.moons} moons\n"
 
             # Trait
-            col1 += f"{self.inspect_cat.personality.trait}\n"
+            col1 += f"{self.inspect_cat.personality['ru_name']}\n"
 
             self.inspect_cat_elements["col1"] = pygame_gui.elements.UITextBox(col1,
                                                                               scale(pygame.Rect((120, 650), (180, 180))),

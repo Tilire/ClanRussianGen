@@ -538,8 +538,8 @@ class PatrolScreen(Screens):
             if x != self.patrol_obj.patrol_leader:
                 members.append(str(x.name))
         for x in self.patrol_obj.patrol_cats:
-            if x.personality.trait not in traits:
-                traits.append(x.personality.trait)
+            if x.personality['ru_name'] not in traits:
+                traits.append(x.personality["ru_name"])
             
             if x.skills.primary and x.skills.primary.get_short_skill() not in skills:
                 skills.append(x.skills.primary.get_short_skill())
@@ -730,8 +730,8 @@ class PatrolScreen(Screens):
                 if x.skills.secondary and x.skills.secondary.get_short_skill() not in patrol_skills:
                     patrol_skills.append(x.skills.secondary.get_short_skill())
                 
-                if x.personality.trait not in patrol_traits:
-                    patrol_traits.append(x.personality.trait)
+                if x.personality['ru_name'] not in patrol_traits:
+                    patrol_traits.append(x.personality['ru_name'])
 
         self.elements["skills_box"].set_text(
             f"Current Patrol Skills: {', '.join(patrol_skills)}\nCurrent Patrol Traits: {', '.join(patrol_traits)}"
@@ -814,7 +814,7 @@ class PatrolScreen(Screens):
                                                                            manager=MANAGER)
 
             self.elements['selected_bio'] = pygame_gui.elements.UITextBox(str(self.selected_cat.status) +
-                                                                          "\n" + str(self.selected_cat.personality.trait) +
+                                                                          "\n" + str(self.selected_cat.personality["ru_name"]) +
                                                                           "\n" + str(self.selected_cat.skills.skill_string(short=True)) +
                                                                           "\n" + str(
                 self.selected_cat.experience_level) +

@@ -836,7 +836,7 @@ class ProfileScreen(Screens):
             output += "\n"
 
         # CHARACTER TRAIT
-        output += the_cat.personality.trait
+        output += the_cat.personality['ru_name']
         # NEWLINE ----------
         output += "\n"
 

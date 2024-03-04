@@ -214,7 +214,7 @@ class MediationScreen(Screens):
                 short_name,
                 object_id=get_text_box_theme())
 
-            text = mediator.personality.trait + "\n" + mediator.experience_level
+            text = mediator.personality['ru_name'] + "\n" + mediator.experience_level
 
             if mediator.not_working():
                 text += "\nThis cat isn't able to work"
@@ -394,10 +394,10 @@ class MediationScreen(Screens):
             col1 += " moon"
         else:
             col1 += " moons"
-        if len(cat.personality.trait) > 15:
-            _t = cat.personality.trait[:13] + ".."
+        if len(cat.personality['ru_name']) > 15:
+            _t = cat.personality['ru_name'][:13] + ".."
         else:
-            _t = cat.personality.trait
+            _t = cat.personality['ru_name']
         col1 += "\n" + _t
         self.selected_cat_elements["col1" + tag] = pygame_gui.elements.UITextBox(col1,
                                                                                  scale(pygame.Rect((x + 42, y + 252),
