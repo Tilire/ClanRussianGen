@@ -1,126 +1,126 @@
 {
     "normal_traits": {
-        "troublesome": {
+        "хлопотливый": {
             "lawfulness": [0, 8],
             "sociability": [0, 8],
             "aggression": [0, 8],
             "stability": [0, 8]
         },
-        "lonesome": {
+        "одинокий": {
             "lawfulness": [0, 8],
             "sociability": [0, 8],
             "aggression": [0, 8],
             "stability": [8, 16]
         },
-        "fierce": {
+        "яростный": {
             "lawfulness": [0, 8],
             "sociability": [0, 8],
             "aggression": [8, 11],
             "stability": [0, 8]
         },
-        "bloodthirsty": {
+        "кровожадный": {
             "lawfulness": [0, 8],
             "sociability": [0, 8],
             "aggression": [12, 16],
             "stability": [0, 8]
         },
-        "cold": {
+        "холодный": {
             "lawfulness": [0, 8],
             "sociability": [0, 8],
             "aggression": [8, 16],
             "stability": [8, 16]
         },
-        "childish": {
+        "несерьёзный": {
             "lawfulness": [0, 8],
             "sociability": [8, 16],
             "aggression": [0, 8],
             "stability": [0, 8]
         },
-        "playful": {
+        "игривый": {
             "lawfulness": [0, 8],
             "sociability": [8, 16],
             "aggression": [0, 8],
             "stability": [8, 16]
         },
-        "charismatic": {
+        "харизматичный": {
             "lawfulness": [0, 12],
             "sociability": [8, 16],
             "aggression": [8, 16],
             "stability": [0, 8]
         },
-        "bold": {
+        "смелый": {
             "lawfulness": [0, 8],
             "sociability": [8, 16],
             "aggression": [8, 12],
             "stability": [8, 16]
         },
-        "daring": {
+        "дерзкий": {
             "lawfulness": [0, 8],
             "sociability": [8, 16],
             "aggression": [13, 16],
             "stability": [8, 16]
         },
-        "nervous": {
+        "нервный": {
             "lawfulness": [8, 16],
             "sociability": [0, 8],
             "aggression": [0, 8],
             "stability": [0, 8]
         },
-        "righteous": {
+        "праведный": {
             "lawfulness": [8, 16],
             "sociability": [0, 8],
             "aggression": [0, 8],
             "stability": [8, 16]
         },
-        "insecure": {
+        "неуверенный": {
             "lawfulness": [8, 16],
             "sociability": [0, 8],
             "aggression": [8, 16],
             "stability": [0, 8]
         },
-        "strict": {
+        "строгий": {
             "lawfulness": [8, 16],
             "sociability": [0, 8],
             "aggression": [8, 16],
             "stability": [8, 16]
         },
-        "compassionate": {
+        "милосердный": {
             "lawfulness": [8, 16],
             "sociability": [8, 16],
             "aggression": [0, 8],
             "stability": [0, 8]
         },
-        "thoughtful": {
+        "задумчивый": {
             "lawfulness": [8, 16],
             "sociability": [8, 16],
             "aggression": [0, 8],
             "stability": [8, 16]
         },
-        "ambitious": {
+        "амбициозный": {
             "lawfulness": [8, 16],
             "sociability": [8, 16],
             "aggression": [8, 16],
             "stability": [0, 8]
         },
-        "confident": {
+        "уверенный": {
             "lawfulness": [8, 16],
             "sociability": [8, 16],
             "aggression": [8, 16],
             "stability": [8, 16]
         },
-        "adventurous": {
+        "ищущий приключений": {
             "lawfulness": [0, 10],
             "sociability": [3, 14],
             "aggression": [3, 14],
             "stability": [8, 16]
         },
-        "calm": {
+        "спокойный": {
             "lawfulness": [9, 16],
             "sociability": [6, 14],
             "aggression": [0, 5],
             "stability": [9, 16]
         },
-        "careful": {
+        "осторожный": {
             "lawfulness": [8, 12],
             "sociability": [4, 12],
             "aggression": [0, 6],
@@ -132,55 +132,55 @@
             "aggression": [0, 6],
             "stability": [3, 13]
         },
-        "loving": {
+        "любящий": {
             "lawfulness": [6, 13],
             "sociability": [9, 16],
             "aggression": [0, 8],
             "stability": [5, 14]
         },
-        "loyal": {
+        "верный": {
             "lawfulness": [10, 16],
             "sociability": [5, 16],
             "aggression": [5, 13],
             "stability": [5, 13]
         },
-        "responsible": {
+        "ответственный": {
             "lawfulness": [8, 16],
             "sociability": [5, 16],
             "aggression": [0, 7],
             "stability": [4, 10]
         },
-        "shameless": {
+        "бесстыжий": {
             "lawfulness": [0, 7],
             "sociability": [4, 14],
             "aggression": [7, 12],
             "stability": [9, 16]
         },
-        "sneaky": {
+        "подлый": {
             "lawfulness": [0, 7],
             "sociability": [0, 7],
             "aggression": [6, 12],
             "stability": [8, 16]
         },
-        "strange": {
+        "странный": {
             "lawfulness": [5, 10],
             "sociability": [0, 8],
             "aggression": [5, 10],
             "stability": [5, 10]
         },
-        "vengeful": {
+        "мстительный": {
             "lawfulness": [0, 7],
             "sociability": [0, 7],
             "aggression": [8, 14],
             "stability": [0, 4]
         },
-        "wise": {
+        "мудрый": {
             "lawfulness": [8, 16],
             "sociability": [4, 16],
             "aggression": [0, 6],
             "stability": [8, 16]
         },
-        "arrogant": {
+        "высокомерный": {
             "lawfulness": [5, 8],
             "sociability": [8, 16],
             "aggression": [7, 12],
@@ -192,43 +192,43 @@
             "aggression": [6, 12],
             "stability": [8, 16]
         },
-        "grumpy": {
+        "угрюмый": {
             "lawfulness": [0, 16],
             "sociability": [0, 5],
             "aggression": [5, 9],
             "stability": [0, 7]
         },
-        "cunning": {
+        "хитрый": {
             "lawfulness": [0, 5],
             "sociability": [8, 16],
             "aggression": [0, 6],
             "stability": [8, 16]
         },
-        "oblivious": {
+        "забывчивый": {
             "lawfulness": [6, 12],
             "sociability": [10, 16],
             "aggression": [0, 6],
             "stability": [6, 12]
         },
-        "gloomy": {
+        "унылый": {
             "lawfulness": [6, 12],
             "sociability": [0, 5],
             "aggression": [0, 6],
             "stability": [0, 8]
         },
-        "sincere": {
+        "искренний": {
             "lawfulness": [12, 16],
             "sociability": [6, 12],
             "aggression": [0, 5],
             "stability": [12, 16]
         },
-        "flamboyant": {
+        "напыщенный": {
             "lawfulness": [6, 10],
             "sociability": [13, 16],
             "aggression": [6, 12],
             "stability": [10, 16]
         },
-        "rebellious": {
+        "бунтарский": {
             "lawfulness": [0, 4],
             "sociability": [0, 16],
             "aggression": [6, 10],
@@ -236,97 +236,97 @@
         }
     },
     "kit_traits": {
-        "unruly": {
+        "непослушный": {
             "lawfulness": [0, 8],
             "sociability": [0, 8],
             "aggression": [0, 8],
             "stability": [0, 8]
         },
-        "shy": {
+        "стеснительный": {
             "lawfulness": [0, 8],
             "sociability": [0, 8],
             "aggression": [0, 8],
             "stability": [8, 16]
         },
-        "impulsive": {
+        "импульсивный": {
             "lawfulness": [0, 8],
             "sociability": [0, 8],
             "aggression": [8, 16],
             "stability": [0, 8]
         },
-        "bullying": {
+        "задиристый": {
             "lawfulness": [0, 8],
             "sociability": [0, 8],
             "aggression": [8, 16],
             "stability": [8, 16]
         },
-        "attention-seeker": {
+        "ищущий внимания": {
             "lawfulness": [0, 8],
             "sociability": [8, 16],
             "aggression": [0, 8],
             "stability": [0, 8]
         },
-        "charming": {
+        "очаровательный": {
             "lawfulness": [0, 8],
             "sociability": [8, 16],
             "aggression": [0, 8],
             "stability": [8, 16]
         },
-        "fearless": {
+        "бесстрашный": {
             "lawfulness": [0, 8],
             "sociability": [8, 16],
             "aggression": [8, 16],
             "stability": [0, 8]
         },
-        "noisy": {
+        "шумный": {
             "lawfulness": [0, 8],
             "sociability": [8, 16],
             "aggression": [8, 16],
             "stability": [8, 16]
         },
-        "skittish": {
+        "пугливый": {
             "lawfulness": [8, 16],
             "sociability": [0, 8],
             "aggression": [0, 8],
             "stability": [0, 8]
         },
-        "quiet": {
+        "тихий": {
             "lawfulness": [8, 16],
             "sociability": [0, 8],
             "aggression": [0, 8],
             "stability": [8, 16]
         },
-        "self-conscious": {
+        "осознанный": {
             "lawfulness": [8, 16],
             "sociability": [0, 8],
             "aggression": [8, 16],
             "stability": [0, 8]
         },
-        "daydreamer": {
+        "мечтатель": {
             "lawfulness": [8, 16],
             "sociability": [0, 8],
             "aggression": [8, 16],
             "stability": [8, 16]
         },
-        "sweet": {
+        "милый": {
             "lawfulness": [8, 16],
             "sociability": [8, 16],
             "aggression": [0, 8],
             "stability": [0, 8]
         },
-        "polite": {
+        "вежливый": {
             "lawfulness": [8, 16],
             "sociability": [8, 16],
             "aggression": [0, 8],
             "stability": [8, 16]
         },
-        "know-it-all": {
+        "всезнайка": {
             "lawfulness": [8, 16],
             "sociability": [8, 16],
             "aggression": [8, 16],
             "stability": [0, 8]
         },
-        "bossy": {
+        "властный": {
             "lawfulness": [8, 16],
             "sociability": [8, 16],
             "aggression": [8, 16],

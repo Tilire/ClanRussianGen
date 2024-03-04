@@ -938,7 +938,7 @@ class MakeClanScreen(Screens):
                                                     visible=False, manager=MANAGER)
         # Error message, to appear if you can't choose that cat.
         self.elements['error_message'] = pygame_gui.elements.UITextBox(
-            "Лидер должен быть взрослым",
+            "Предводитель должен быть взрослым",
             scale(pygame.Rect((300, 706), (1000, 110))),
             object_id=get_text_box_theme("#text_box_30_horizcenter_red"),
             visible=False,

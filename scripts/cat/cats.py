@@ -2392,7 +2392,7 @@ class Cat():
                             log=rel['log'])
                         self.relationships[rel['cat_to_id']] = new_rel
             except:
-                print(f'WARNING: There was an error reading the relationship file of cat #{self}.')
+                print(f'ПРЕДУПРЕЖДЕНИЕ: Произошла ошибка при чтении файла отношений кота #{self}.')
 
     @staticmethod
     def mediate_relationship(mediator, cat1, cat2, allow_romantic, sabotage=False):
@@ -2705,7 +2705,7 @@ class Cat():
                       'r') as read_file:
                 cat_info = ujson.loads(read_file.read())
         except:
-            print("ERROR: in loading faded cat")
+            print("ОШИБКА: в загрузке исчезнувшего кота")
             return False
 
         cat_ob = Cat(ID=cat_info["ID"], prefix=cat_info["name_prefix"], suffix=cat_info["name_suffix"],
@@ -2949,7 +2949,7 @@ class Personality():
     facet_types = ["lawfulness", "sociability", "aggression", "stability"]
     facet_range = [0, 16]
     
-    with open("resources/dicts/traits/trait_ranges.json", "r") as read_file:
+    with open("resources/dicts/traits/trait_ranges.json", "r", encoding='utf8') as read_file:
         trait_ranges = ujson.loads(read_file.read())
     
     def __init__(self, trait:str=None, kit_trait:bool=False, lawful:int=None, social:int=None, aggress:int=None, 
@@ -3153,7 +3153,7 @@ class Personality():
         if possible_traits:
             self.trait = choice(possible_traits)
         else:
-            print("No possible traits! Using 'strange'")
+            print("Нет возможных черт характера! Используем 'странный'")
             self.trait = "strange"
             
     def facet_wobble(self, max=5):
